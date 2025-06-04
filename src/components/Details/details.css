@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+.container{
+  @apply flex gap-5 min-h-[60vh] w-full items-center max-sm:flex-col;
+
+  .image{
+    @apply w-1/2 h-[50vh] max-sm:w-full max-sm:h-[60vh];
+
+    img{
+      @apply w-full h-full object-cover rounded-2xl; 
+    }
+  } 
+
+  .details{
+    @apply flex flex-col gap-2 w-1/2 h-full;
+
+    .summary{
+      @apply flex flex-col gap-2 items-start;
+
+      span{
+        @apply text-cyan-500;
+      }
+
+      button{
+        @apply p-2 bg-black rounded-md text-white cursor-pointer;
+      }
+    }
+
+    .ingredients{
+      @apply flex flex-col;
+
+      h1{
+        @apply text-left;
+
+        ul{
+          @apply overflow-y-scroll h-12;
+
+          li{
+            @apply text-left;
+          }
+        }
+      }
+    }
+  }
+}

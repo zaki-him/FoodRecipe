@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+header{
+  @apply flex justify-between items-center ;
+
+  .logo{
+    @apply flex items-center gap-2;
+  }
+
+  form{
+    @apply grow-1;
+
+    input{
+      @apply w-[80%] outline-none p-2 bg-amber-100 border border-none rounded-2xl;
+    }
+  }
+
+  div{
+    @apply flex gap-2 px-2;
+  }
+}
