@@ -3,6 +3,7 @@ import "./details.css";
 import { useParams } from "react-router-dom";
 import { GlobalContext } from "../../context";
 
+
 const Details = () => {
   const { id } = useParams();
   const { recipeData, setRecipeData , favoritesArray , setFavoritesArray , addFavorites} = useContext(GlobalContext);
